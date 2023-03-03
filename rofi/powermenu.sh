@@ -1,18 +1,18 @@
 #!/bin/env bash
 
 # Options for powermenu
-lock="    Lock"
-logout="    Logout"
-shutdown="    Shutdown"
-reboot="    Reboot"
-sleep="   Sleep"
+lock="1. Lock "
+logout="2. Logout "
+shutdown="3. Shutdown "
+reboot="4. Reboot "
+sleep="5. Sleep "
 
 # Get answer from user via rofi
 selected_option=$(echo "$lock
 $logout
-$sleep
+$shutdown
 $reboot
-$shutdown" | rofi -dmenu\
+$sleep" | rofi -dmenu\
                   -i\
                   -p "Power"\
                   -config "~/.config/rofi/powermenu.rasi"\

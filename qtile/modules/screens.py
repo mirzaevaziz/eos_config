@@ -29,6 +29,15 @@ screens = [
                 ),
                 widget.Sep(padding=5, linewidth=0, background="#94918f"),
                 widget.TextBox(
+                    text='',
+                    mouse_callbacks={
+                        'Button1':
+                        lambda: qtile.cmd_spawn('qutebrowser')
+                    },
+                    foreground='#e8e8e8',
+                    background="#94918f"
+                ),
+                widget.TextBox(
                     text='',
                     mouse_callbacks={
                         'Button1':
@@ -43,6 +52,33 @@ screens = [
                     mouse_callbacks={
                         'Button1':
                         lambda: qtile.cmd_spawn('thunar')
+                    },
+                    foreground='#e8e8e8'
+                ),
+                widget.TextBox(
+                    text='',
+                    background="#94918f",
+                    mouse_callbacks={
+                        'Button1':
+                        lambda: qtile.cmd_spawn('remmina')
+                    },
+                    foreground='#e8e8e8'
+                ),
+                widget.TextBox(
+                    text='',
+                    background="#94918f",
+                    mouse_callbacks={
+                        'Button1':
+                        lambda: qtile.cmd_spawn('dbeaver')
+                    },
+                    foreground='#e8e8e8'
+                ),
+                widget.TextBox(
+                    text='',
+                    background="#94918f",
+                    mouse_callbacks={
+                        'Button1':
+                        lambda: qtile.cmd_spawn('code /home/ts/.config/')
                     },
                     foreground='#e8e8e8'
                 ),

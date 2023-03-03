@@ -29,7 +29,7 @@ def window_to_next_screen(qtile, switch_group=False, switch_screen=False):
 
 
 keys = [
-    Key([mod], "v", lazy.spawn('clipster -sp'),
+    Key([mod], "v", lazy.spawn('clipster -sc'),
         desc='clipster history selector'),
     Key([mod], "z", lazy.spawn('telegram-desktop'), desc='telegram-desktop'),
     Key([mod, "control"], "s", lazy.spawn(os.path.expanduser(
@@ -69,6 +69,7 @@ keys = [
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
 
     Key([mod], "d", lazy.spawn("rofi -show combi"), desc="spawn rofi"),
+    Key([mod], "a", lazy.spawn("rofi -show window"), desc="spawn rofi"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
