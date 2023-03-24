@@ -1,5 +1,5 @@
 #!/bin/sh
-feh --bg-scale /usr/share/endeavouros/backgrounds/eos_wallpapers_community/flval_eos_amour.jpeg
+feh --bg-scale /home/ts/Pictures/plane_sky_art_129149_1920x1080.jpg
 
 /usr/lib/geoclue-2.0/demos/agent & disown
 redshift-gtk & disown

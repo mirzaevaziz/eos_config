@@ -74,6 +74,15 @@ screens = [
                     foreground='#e8e8e8'
                 ),
                 widget.TextBox(
+                    text='',
+                    background="#94918f",
+                    mouse_callbacks={
+                        'Button1':
+                        lambda: qtile.cmd_spawn('ymp')
+                    },
+                    foreground='#e8e8e8'
+                ),
+                widget.TextBox(
                     text='',
                     background="#94918f",
                     mouse_callbacks={
