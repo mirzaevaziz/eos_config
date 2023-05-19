@@ -116,7 +116,7 @@ screens = [
                 widget.Systray(icon_size=20, background="#2f343f"),
                 widget.Sep(padding=5, linewidth=0, background="#2f343f"),
                 volume,
-                widget.Clock(format='  %d.%m.%Y %a %I:%M %p',
+                widget.Clock(format='  %d.%m.%Y %a %I:%M %p',
                              background="#2f343f",
                              foreground='#9bd689'),
                 widget.TextBox(
@@ -177,7 +177,7 @@ screens = [
                     foreground='#2f343f'
                 ),
                 volume,
-                widget.Clock(format='  %d.%m.%Y %a %I:%M %p',
+                widget.Clock(format='  %d.%m.%Y %a %I:%M %p',
                              background="#2f343f",
                              foreground='#9bd689'),
                 widget.TextBox(
